@@ -71,7 +71,7 @@ a {
 .string {
     height: 2px;
     margin-top: 15px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
     opacity: 0;
     transition: opacity 1s;
 }
@@ -81,6 +81,7 @@ a {
     z-index: 3;
     color: white;
     transition: opacity 1s 0.5s;
+    font-weight: bold;
     opacity: 0;
     text-shadow: purple 1px 0 4px;
 }

@@ -132,11 +132,6 @@ function getNoteAndStringIndex(note) {
     return results;
 }
 
-function moveMarker() {
-    document.querySelector('.visualizer').style.left = this.markerX + 'px';
-    markerX += 1;
-}
-
 function stringIdToNote(string = 0) {
     switch (string) {
         case 0:
@@ -156,7 +151,7 @@ function stringIdToNote(string = 0) {
     }
 }
 
-function renderNote(noteNumber = 0, timeDuration, string = 0) {
+function renderNote(noteNumber = null, timeDuration, string = 0) {
     const stringNode = this.stringIdToNote(string);
     const stringY = this.getStringYPosition(stringNode);
     const span = document.createElement('span');
