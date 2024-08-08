@@ -69,10 +69,14 @@ function reloadTab(newTab) {
     });
 
     document.querySelectorAll('.string').forEach(string => {
-        string.style.width = document.querySelector('body').getBoundingClientRect().width + 'px';
+        string.style.width = (lastX * 2) + 'px';
     });
 
     document.querySelectorAll('.note').forEach(note => note.style.opacity = '1');
+
+    document.querySelectorAll('.note').forEach(note => note.style.opacity = '1');
+    const firstNote = document.querySelector('.note');
+    firstNote.scrollIntoView({ behavior: 'smooth' });
 }
 
 function loadMidi(data) {
@@ -106,6 +110,8 @@ function loadMidi(data) {
     gString.style.opacity = '1';
 
     document.querySelectorAll('.note').forEach(note => note.style.opacity = '1');
+    const firstNote = document.querySelector('.note');
+    firstNote.scrollIntoView({ behavior: 'smooth' });
 }
 
 function getStringYPosition(stringNode) {
