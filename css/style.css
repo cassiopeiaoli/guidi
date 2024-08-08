@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/paw.png');
+    background-repeat: repeat;
+    background-color: #101015;
+    background-size: 5%;
+}
+
+.header span {
+    color: blueviolet;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    align-items: center;
+}
+
+.footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    background-color: rgb(47, 10, 47);
+}
+
+a {
+    color: white;
+}
+
+.wrapper {
+    top: 80px;
+    position: fixed;
+}
+
+.header {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.ui button {
+    color: black;
+    border: none;
+    background-color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.guitar {
+    margin-top: 400px;
+    padding: 0 10px;
+    overflow-x: auto;
+}
+
+.string {
+    height: 2px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.note {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    transition: opacity 1s 0.5s;
+    opacity: 0;
+    text-shadow: purple 1px 0 4px;
+}
+
+.loader {
+    margin-top: 25px;
+}
+
+.visualizer {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    background-color: rgba(255, 0, 0, 0.4);
+    z-index: 4;
+    left: 0px;
+}

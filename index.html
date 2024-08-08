@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIDI.pup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+
+            <header class="header">
+                GUIDI<span>.pup</span>
+            </header>
+            
+            <div class="loader">
+                <span>Load your .MIDI file</span>
+                <input class="midi-loader" type="file" name="" id="">
+            </div>
+            <div class="ui">
+                <span>Select TRACK</span>
+                <select class="select" name="" id="">
+                    
+                </select>
+            </div>
+        </div>
+        <section class="guitar">
+            <div class="string" id="E"></div>
+            <div class="string" id="B"></div>
+            <div class="string" id="G"></div>
+            <div class="string" id="D"></div>
+            <div class="string" id="A"></div>
+            <div class="string" id="Elow"></div>
+            <div class="notes"></div>
+        </section>
+
+        <footer class="footer">
+            Made by <b> <a href="https://x.com/cassioliwa" target="_blank">Cassiopeia</a> </b>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/@tonejs/midi"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
